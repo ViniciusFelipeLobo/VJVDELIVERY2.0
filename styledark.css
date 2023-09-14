@@ -18,7 +18,8 @@
 }
 
 html, body{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     grid-template: 1fr 1fr 1fr/ 1fr;
@@ -26,11 +27,10 @@ html, body{
 }
 header{
     width: 100%;
-    height: 47%;
+    height: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
 }
 #logo{
     display: flex;
@@ -111,8 +111,22 @@ footer{
     text-align: center;
 }
 @media (max-width:770px){
+    #titulo{
+        font-size: 1.1rem;
+    }
+    #sub-titulo{
+        font-size: .4rem;
+    }
     #menu{
-        display: none;
+    display: none;
+    align-items: start;
+    flex-direction: column;
+    position: fixed;
+    top: 3.2rem;
+    right: 0;
+    background-color: var(--cor-destaque);
+    width: 100%;
+    height: calc(100vh - 3rem);
     }
     .chevrons{
         display: block;
