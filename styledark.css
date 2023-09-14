@@ -118,14 +118,18 @@ footer{
     color: var(--cor-destaque);
 }
 #reconhecimento a{
-    color: var(--cor-amarela);
+    color: var(--cor-branca);
+    
 }
 @media (max-width:770px){
     #titulo{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     #sub-titulo{
         font-size: .4rem;
+    }
+    .desing-logo{
+        width: 2rem;
     }
     #menu{
     display: none;
