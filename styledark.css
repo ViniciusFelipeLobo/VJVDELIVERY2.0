@@ -5,6 +5,7 @@
     --cor-destaque:#8257e5;
     --cor-de-fundo:#121214;
     --cor-branca: #ffffff;
+    --cor-amarela:#FDC240;
 }
 *{
     color: var(--cor-principal);
@@ -105,9 +106,19 @@ max-width: 100%;
 height: auto;
 }
 footer{
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font: bolder 1rem 'poppins', sans-serif;
     color: var(--cor-branca);
     text-align: center;
+}
+#reconhecimento{
+    color: var(--cor-destaque);
+}
+#reconhecimento a{
+    color: var(--cor-amarela);
 }
 @media (max-width:770px){
     #titulo{
