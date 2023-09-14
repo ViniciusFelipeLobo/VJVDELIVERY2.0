@@ -143,6 +143,9 @@ footer{
         background-color: var(--cor-branca);
         color: var(--cor-destaque);
     }
+    .material-symbols-outlined{
+        padding-left: .1rem;
+    }
     nav{
         display: flex;
         column-gap: .2rem;

@@ -165,6 +165,9 @@ footer{
     button:hover{
         background-color: var(--cor-principal);
     }
+    .material-symbols-outlined{
+        padding-left: .1rem;
+    }
     nav{
         display: flex;
         column-gap: .2rem;
