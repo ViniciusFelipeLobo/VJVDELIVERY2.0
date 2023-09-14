@@ -22,7 +22,6 @@ html, body{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    grid-template: 1fr 1fr 1fr/ 1fr;
     background-color: var(--cor-de-fundo);
 }
 header{
