@@ -118,6 +118,7 @@ footer{
     font: bolder 1rem 'poppins', sans-serif;
     color: var(--cor-destaque);
     text-align: center;
+    margin-top: auto;
 }
 #reconhecimento{
     color: var(--cor-destaque);
