@@ -130,6 +130,9 @@ footer{
 }
 
 @media (max-width:770px){
+    html, body{
+        height: 90vh;
+    }
     #titulo{
         font-size: 1.1rem;
     }
