@@ -191,4 +191,7 @@ footer{
         display: flex;
         column-gap: .2rem;
     }
+    img{
+        height: 70%;
+    }
 }
