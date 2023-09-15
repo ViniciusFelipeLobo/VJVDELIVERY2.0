@@ -129,8 +129,6 @@ footer{
     transition: 1s ease-in-out;
     transform: rotate(360deg);
 }
-section{
-}
 img{
     height: auto;
     max-width: 100%;
