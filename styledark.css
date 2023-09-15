@@ -15,7 +15,6 @@
     box-sizing: border-box;
     --webkit-font-smoothing: grayscale;
     --webkit-osx-smoothing: antialiased;
-    -webkit-tap-highlight-color: transparent;
     font-size: 100%;
 }
 
@@ -25,7 +24,6 @@ html, body{
     width: 100vw;
     height: 100vh;
     background-color: var(--cor-de-fundo);
-    overflow: hidden;
 }
 header{
     width: 100%;
