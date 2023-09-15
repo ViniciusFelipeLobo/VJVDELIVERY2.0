@@ -128,7 +128,7 @@ footer{
 }
 @media (max-width:770px){
     #titulo{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     #sub-titulo{
         font-size: .4rem;
