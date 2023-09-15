@@ -34,7 +34,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 #logo{
     display: flex;
@@ -131,16 +130,14 @@ footer{
     transform: rotate(360deg);
 }
 section{
-    height: 75%;
 }
 img{
     height: auto;
     max-width: 100%;
-    background-size: cover;
 }
 @media (max-width:770px){
     html, body{
-        height: 90vh;
+        height: 100vh;
     }
     #titulo{
         font-size: 1.1rem;
