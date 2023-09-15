@@ -164,6 +164,5 @@ footer{
     nav{
         display: flex;
         column-gap: .2rem;
-        padding-right: 1rem;
     }
 }
