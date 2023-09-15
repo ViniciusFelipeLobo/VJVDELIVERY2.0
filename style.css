@@ -131,7 +131,7 @@ footer{
         font-size: 1.1rem;
     }
     #sub-titulo{
-        font-size: .6rem;
+        font-size: .5rem;
     }
     .desing-logo{
         width: 2rem;
@@ -190,7 +190,5 @@ footer{
         display: flex;
         column-gap: .2rem;
     }
-    img{
-        height: 70%;
-    }
+
 }
