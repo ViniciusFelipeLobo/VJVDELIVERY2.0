@@ -109,6 +109,7 @@ li{
     border-radius: 1rem;
 }
 footer{
+    background-color: var(--cor-branca);
     height: 8%;
     display: flex;
     align-items: center;
@@ -129,7 +130,7 @@ footer{
     transform: rotate(360deg);
 }
 section{
-    height: 80%;
+    height: 75%;
 }
 img{
     height: auto;
