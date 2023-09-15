@@ -24,6 +24,7 @@ html, body{
     width: 100vw;
     height: 100vh;
     background-color: var(--cor-de-fundo);
+    overflow: hidden;
 }
 header{
     width: 100%;
@@ -102,8 +103,7 @@ li{
     border-radius: 1rem;
 }
 img{
-max-width: 100%;
-height: auto;
+    height: 80%;
 }
 footer{
     height: 8%;
