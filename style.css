@@ -123,6 +123,7 @@ footer{
 }
 #reconhecimento a{
     color: var(--cor-amarela);
+    text-decoration: none;
 }
 #rotate{
     transition: 1s ease-in-out;
