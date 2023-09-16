@@ -207,6 +207,7 @@ footer{
         height: 98%;
     }
     footer{
+        background-color: red;
         height: 4%;
     }
 }
