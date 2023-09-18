@@ -3,6 +3,7 @@
 :root{
     --cor-principal:#7f7f80;
     --cor-destaque:#8257e5;
+    --cor-destaque-tonalidade-clara:#9170df;
     --cor-de-fundo:#121214;
     --cor-branca: #ffffff;
     --cor-amarela:#FDC240;
@@ -138,18 +139,39 @@ footer{
         width: 2rem;
     }
     #menu{
-    display: none;
-    align-items: start;
-    flex-direction: column;
-    position: fixed;
-    top: 3.2rem;
-    right: 0;
-    background-color: var(--cor-destaque);
-    width: 100%;
-    height: calc(100vh - 3rem);
-    }
-    .chevrons{
+        position: absolute;
         display: block;
+        align-items: start;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        background-color: var(--cor-destaque);
+        width: 100%;
+        height: calc(100vh - 3rem);
+        z-index: 1000;
+        }
+    .chevrons{
+        display: flex;
+        stroke: var(--cor-de-fundo);
+    }
+    .chevrons1{
+        display: flex;
+        stroke: var(--cor-branca);
+    }
+    li{
+        width: 100%;
+
+        color: var(--cor-de-fundo);
+    }
+    li:hover{
+        color: var(--cor-branca);
+    }
+    .selector{
+        width: 100%;
+        border-bottom: 1px solid var(--cor-branca);
+    }
+    .selector:hover{
+        background-color: var(--cor-destaque-tonalidade-clara);
     }
     button{
         display: flex;
@@ -179,6 +201,7 @@ footer{
         background-size: cover;
         max-width: 100%;
         height: 98%;
+        position: relative;
     }
     footer{
         height: 4%;
