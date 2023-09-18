@@ -17,9 +17,15 @@ const menu = document.querySelector('#menu');
 const lista = document.querySelector('ul')
 const larguraDaTela = window.innerWidth;
 const section = document.querySelector('section');
-window.addEventListener('resize', ()=>{
-if(larguraDaTela <= 700){
-nav.removeChild(lista);
-section.appendChild(lista);
-}
+const btnMenu = document.querySelector('#btnMenu');
+btnMenu.addEventListener('click', ()=>{
+    if(menu.style.display == 'none'){
+        menu.style.display = 'block';
+        if(larguraDaTela <= 700){
+        nav.removeChild(lista);
+        section.appendChild(lista);
+        }
+    }else{
+        menu.style.display = 'none';
+    }
 })

@@ -145,7 +145,7 @@ footer{
     }
     #menu{
     position: absolute;
-    display: block;
+    display: none;
     align-items: start;
     flex-direction: column;
     top: 0;
