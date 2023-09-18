@@ -123,11 +123,7 @@ footer{
     transition: 1s ease-in-out;
     transform: rotate(-360deg);
 }
-img{
-    height: auto;
-    max-width: 100%;
-    background-size: cover;
-}
+
 @media (max-width:770px){
     html, body{
         height: 95vh;
