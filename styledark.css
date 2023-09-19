@@ -90,6 +90,9 @@ li{
 .chevrons{
     display: none;
 }
+.chevrons1{
+    display: none;
+}
 #desing{
     display: flex;
     justify-content: space-between;
@@ -155,7 +158,6 @@ footer{
         stroke: var(--cor-de-fundo);
     }
     .chevrons1{
-        display: flex;
         stroke: var(--cor-branca);
     }
     li{
@@ -163,12 +165,10 @@ footer{
 
         color: var(--cor-de-fundo);
     }
-    li:hover{
-        color: var(--cor-branca);
-    }
     .selector{
         width: 100%;
         border-bottom: 1px solid var(--cor-branca);
+        position: relative;
     }
     .selector:hover{
         background-color: var(--cor-destaque-tonalidade-clara);
@@ -192,6 +192,15 @@ footer{
     nav{
         display: flex;
         column-gap: .2rem;
+    }
+    .selector:has(input:checked) [data-lucide = "check"]{
+        display: block;
+    }
+    input[type="radio"]{
+        all: unset;
+        inset: 0;
+        position: absolute;
+        cursor: pointer;
     }
     section{
         background: url(imagens/vjv2.png);

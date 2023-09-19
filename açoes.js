@@ -28,4 +28,5 @@ btnMenu.addEventListener('click', ()=>{
     }else{
         menu.style.display = 'none';
     }
+
 })
