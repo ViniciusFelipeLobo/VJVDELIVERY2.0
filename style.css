@@ -224,13 +224,19 @@ footer{
     }
 }
 @media (max-width:400px){
+    html, body{
+        height: 90vh;
+    }
     #titulo{
-        font-size: .9rem;
+        font-size: .8rem;
     }
     #sub-titulo{
         font-size: .5rem;
     }
     .desing-logo{
         width: 1.5rem;
+    }
+    button{
+   padding: 0 0rem;
     }
 }
