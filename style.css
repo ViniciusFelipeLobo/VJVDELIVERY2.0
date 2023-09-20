@@ -223,3 +223,14 @@ footer{
         height: 4%;
     }
 }
+@media (max-width:400px){
+    #titulo{
+        font-size: .9rem;
+    }
+    #sub-titulo{
+        font-size: .5rem;
+    }
+    .desing-logo{
+        width: 1.5rem;
+    }
+}
