@@ -155,7 +155,7 @@ footer{
         }
     .chevrons{
         display: flex;
-        stroke: var(--cor-de-fundo);
+        stroke: var(--cor-branca);
     }
     .chevrons1{
         stroke: var(--cor-branca);
