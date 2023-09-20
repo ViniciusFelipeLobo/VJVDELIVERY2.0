@@ -160,9 +160,8 @@ footer{
     stroke: var(--cor-branca);
     }
     .chevrons1{
-        stroke: var(--cor-destaque);
+        stroke: var(--cor-branca);
     }
-    .selector:has()
     li{
         width: 100%;
 
@@ -198,7 +197,10 @@ footer{
         display: flex;
         column-gap: .2rem;
     }
-    .selector:has(input:checked) [data-lucide = "check"]{
+    input[data-lucide="check"] {
+        display: none;
+    }
+    .selector:has(input:checked) [data-lucide="check"] {
         display: block;
     }
     input[type="radio"]{
