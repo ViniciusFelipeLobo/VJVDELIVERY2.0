@@ -106,6 +106,17 @@ li{
     height: .2rem;
     border-radius: 1rem;
 }
+input[type="radio"]{
+    display: none;
+}
+section{
+    background: url(imagens/IMAGEM\ PARA\ PC2.png);
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    height: 100%;
+    width: 100%;
+}
 footer{
     height: 8%;
     display: flex;
