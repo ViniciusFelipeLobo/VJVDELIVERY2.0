@@ -77,7 +77,9 @@ ul{
 li{
     display: block;
     padding: 1rem;
-    
+}
+li:hover{
+    color: var(--cor-destaque);
 }
 .selector{
     display: flex;

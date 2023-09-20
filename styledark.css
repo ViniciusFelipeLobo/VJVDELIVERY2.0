@@ -69,13 +69,16 @@ button{
 }
 ul{
     width: 100%;
-    display: none;
+    display: flex;
     list-style: none;
     align-items: center;
 }
 li{
     display: block;
     padding: 1rem;
+    color: var(--cor-branca);
+}
+li:hover {
     color: var(--cor-destaque);
 }
 .selector{
