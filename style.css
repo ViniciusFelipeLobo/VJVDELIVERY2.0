@@ -200,7 +200,7 @@ footer{
         padding: 0 1rem;
         cursor: pointer;
     }
-    button:hover{
+    .btnClicar{
         background-color: var(--cor-principal);
     }
     .material-symbols-outlined{
