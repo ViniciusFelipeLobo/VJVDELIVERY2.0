@@ -107,6 +107,13 @@ li{
     height: .2rem;
     border-radius: 1rem;
 }
+section{
+    background: url(imagens/IMAGEM\ PARA\ PC2.png);
+    display: grid;
+    place-content: center;
+    height: 100%;
+    width: 100%;
+}
 footer{
     background-color: var(--cor-branca);
     height: 8%;
