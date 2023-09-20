@@ -109,6 +109,7 @@ li{
 }
 section{
     background: url(imagens/IMAGEM\ PARA\ PC2.png);
+    background-size: cover;
     display: grid;
     place-content: center;
     height: 100%;
@@ -230,7 +231,7 @@ footer{
         height: 4%;
     }
 }
-@media (max-width:400px){
+@media (max-width: 374px){
     html, body{
         height: 87vh;
     }
