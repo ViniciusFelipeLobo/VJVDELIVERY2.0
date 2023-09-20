@@ -24,9 +24,11 @@ btnMenu.addEventListener('click', ()=>{
         if(larguraDaTela <= 700){
         nav.removeChild(lista);
         section.appendChild(lista);
+        btnMenu.style.backgroundColor = '#7f7f80';
         }
     }else{
         menu.style.display = 'none';
+        btnMenu.style.backgroundColor = '#8257e5';
     }
 
 })
