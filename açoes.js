@@ -19,9 +19,9 @@ const larguraDaTela = window.innerWidth;
 const section = document.querySelector('section');
 const btnMenu = document.querySelector('#btnMenu');
 btnMenu.addEventListener('click', ()=>{
+    btnMenu.classList.toggle("btnClicar")
     if(menu.style.display == 'none'){
         menu.style.display = 'block';
-        btnMenu.classList.toggle("btnClicar")
         if(larguraDaTela <= 700){
         nav.removeChild(lista);
         section.appendChild(lista);
