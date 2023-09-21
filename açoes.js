@@ -18,7 +18,7 @@ const lista = document.querySelector('ul')
 const larguraDaTela = window.innerWidth;
 const section = document.querySelector('section');
 const btnMenu = document.querySelector('#btnMenu');
-btnMenu.addEventListener('touchstart', ()=>{
+btnMenu.addEventListener('click', ()=>{
     btnMenu.classList.toggle("btnClicar")
     if(menu.style.display == 'none'){
         menu.style.display = 'block';
