@@ -40,6 +40,7 @@ botoes[0].addEventListener('click', ()=>{
         // Quando o menu não estiver acionado vai voltar para a coloração padrão
         if(linkCss.getAttribute('href') === 'style.css'){
             botoes[0].style.backgroundColor = '#8257e5';
+            botoes[0].style.color = '#ffffff'
         }else{
             botoes[0].style.backgroundColor = '#8257e5';
             botoes[0].style.color = '#ffffff'
