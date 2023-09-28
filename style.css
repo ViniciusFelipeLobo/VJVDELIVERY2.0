@@ -168,6 +168,19 @@ footer{
     height: calc(100vh - 3rem);
     z-index: 1000;
     }
+    #sobre{
+    position: absolute;
+    display: block;
+    align-items: start;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    background-color: var(--cor-destaque);
+    width: 100%;
+    height: calc(100vh - 3rem);
+    z-index: 1000;
+    }
+
     .chevrons{
     display: flex;
     stroke: var(--cor-branca);
