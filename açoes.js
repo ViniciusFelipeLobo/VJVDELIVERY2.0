@@ -31,8 +31,10 @@ botoes[0].addEventListener('click', ()=>{
             botoes[0].style.color = '#ffffff';
         }
     }
+    // Quando o evento de clique for acionado mostrar o menu 
     if(menu.style.display == 'none'){
         menu.style.display = 'block';
+        // Aqui se a largura da tela estiver para dispositivos movéis vai fazer uma alteração de desing
         if(larguraDaTela <= 700){
         nav.removeChild(lista);
         section.appendChild(lista);
