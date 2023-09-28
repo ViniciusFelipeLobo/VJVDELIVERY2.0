@@ -7,8 +7,17 @@ botaoDarkLight.addEventListener('click', ()=>{
     botaoDarkLight.setAttribute('id', 'rotate');
     if(linkCss.getAttribute('href') ==='style.css'){
         linkCss.setAttribute('href', 'styledark.css');
+        //alteração para não ocorrer bugs quando trocar de light para dar e o botao estiver acionado
+        if(menu.style.display == 'block'){
+            botoes[0].style.backgroundColor = '#ffffff';
+            botoes[0].style.color = '#8257e5';
+        }
     }else{
         linkCss.setAttribute('href', 'style.css');
+                //alteração para não ocorrer bugs quando trocar de light para dar e o botao estiver acionado
+        if(menu.style.display == 'block'){
+        botoes[0].style.backgroundColor = '#7f7f80';
+        }
     }
 })
 //Colocando a lista de maneira reponsiva para dispositivos Móveis.
