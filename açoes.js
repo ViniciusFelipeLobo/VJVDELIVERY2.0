@@ -19,10 +19,12 @@ const larguraDaTela = window.innerWidth;
 const section = document.querySelector('section');
 const botoes = document.getElementsByTagName('button');
 botoes[0].addEventListener('click', ()=>{
+    //verificando se está no modo light ou dark para fazer a troca de coloração dos botões
     if(linkCss.getAttribute('href') === 'style.css'){
         botoes[0].style.backgroundColor = '#7f7f80';
     }else{
         botoes[0].style.backgroundColor = '#ffffff';
+        // Aninhamento para fazer a troca de coloração do texto no botão quando voltar ao inicio 
         if(botoes[0].style.backgroundColor == '#ffffff'){
             botoes[0].style.color = '#8257e5';
         }else{
