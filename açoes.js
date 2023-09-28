@@ -22,6 +22,7 @@ botaoDarkLight.addEventListener('click', ()=>{
             botoes[0].style.backgroundColor = '#7f7f80';
         }else if(sobre.style.display == 'block'){
             botoes[1].style.backgroundColor = '#7f7f80';
+            botoes[1].style.color = '#ffffff';
         }
     }
 })
