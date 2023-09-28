@@ -196,10 +196,6 @@ footer{
         padding: 0 1rem;
         cursor: pointer;
     }
-    button:hover{
-        background-color: var(--cor-branca);
-        color: var(--cor-destaque);
-    }
     .material-symbols-outlined{
         padding-left: .1rem;
     }

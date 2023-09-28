@@ -23,6 +23,11 @@ botoes[0].addEventListener('click', ()=>{
         botoes[0].style.backgroundColor = '#7f7f80';
     }else{
         botoes[0].style.backgroundColor = '#ffffff';
+        if(botoes[0].style.backgroundColor == '#ffffff'){
+            botoes[0].style.color = '#8257e5';
+        }else{
+            botoes[0].style.color = '#ffffff';
+        }
     }
     if(menu.style.display == 'none'){
         menu.style.display = 'block';
