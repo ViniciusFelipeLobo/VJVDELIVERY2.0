@@ -36,12 +36,18 @@ botoes[0].addEventListener('click', ()=>{
     // Quando o evento de clique for acionado mostrar o menu 
     if(menu.style.display == 'none'){
         menu.style.display = 'block';
+        sobre.style.display = 'none';
         // Enquanto o menu estiver acionado o botão vai ficar nesse coloração
         if(linkCss.getAttribute('href') === 'style.css'){
             botoes[0].style.backgroundColor = '#7f7f80';
+            botoes[1].style.backgroundColor = '#8257e5';
+            botoes[1].style.color = '#ffffff';
         }else{
             botoes[0].style.backgroundColor = '#ffffff';
             botoes[0].style.color = '#8257e5';
+            botoes[1].style.backgroundColor = '#8257e5';
+            botoes[1].style.color = '#ffffff';
+
         }
         /* Aqui se a largura da tela estiver para dispositivos movéis vai fazer uma 
         alteração de desing, tirando a lista de naveção do header e colocando ela na area 
@@ -66,12 +72,17 @@ botoes[1].addEventListener('click', ()=>{
     // Quando o evento de clique for acionado mostrar o menu 
     if(sobre.style.display == 'none'){
         sobre.style.display = 'block';
+        menu.style.display = 'none';
         // Enquanto o sobre estiver acionado o botão vai ficar nesse coloração
         if(linkCss.getAttribute('href') === 'style.css'){
             botoes[1].style.backgroundColor = '#7f7f80';
+            botoes[0].style.backgroundColor = '#8257e5';
+            botoes[0].style.color = '#ffffff';
         }else{
             botoes[1].style.backgroundColor = '#ffffff';
             botoes[1].style.color = '#8257e5';
+            botoes[0].style.backgroundColor = '#8257e5';
+            botoes[0].style.color = '#ffffff';
         }
         /* Aqui se a largura da tela estiver para dispositivos movéis vai fazer uma 
         alteração de desing, tirando a lista de naveção do header e colocando ela na area 
