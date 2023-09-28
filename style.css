@@ -120,6 +120,9 @@ section{
     height: 100%;
     width: 100%;
 }
+#sobre{
+    display: none;
+}
 footer{
     background-color: var(--cor-branca);
     height: 8%;
@@ -170,7 +173,6 @@ footer{
     }
     #sobre{
     position: absolute;
-    display: none;
     align-items: start;
     flex-direction: column;
     top: 0;
