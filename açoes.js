@@ -22,6 +22,7 @@ botoes[0].addEventListener('click', ()=>{
     // Quando o evento de clique for acionado mostrar o menu 
     if(menu.style.display == 'none'){
         menu.style.display = 'block';
+        // Enquanto o menu estiver acionado o botão vai ficar nesse coloração
         if(linkCss.getAttribute('href') === 'style.css'){
             botoes[0].style.backgroundColor = '#7f7f80';
         }else{
@@ -36,6 +37,7 @@ botoes[0].addEventListener('click', ()=>{
     }
     }else{
         menu.style.display = 'none';
+        // Quando o menu não estiver acionado vai voltar para a coloração padrão
         if(linkCss.getAttribute('href') === 'style.css'){
             botoes[0].style.backgroundColor = '#8257e5';
         }else{
