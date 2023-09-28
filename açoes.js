@@ -28,9 +28,12 @@ botoes[0].addEventListener('click', ()=>{
             botoes[0].style.backgroundColor = '#ffffff';
             botoes[0].style.color = '#8257e5';
         }
-        // Aqui se a largura da tela estiver para dispositivos movéis vai fazer uma alteração de desing
+        /* Aqui se a largura da tela estiver para dispositivos movéis vai fazer uma 
+        alteração de desing, tirando a lista de naveção do header e colocando ela na area 
+        do section*/
         if(larguraDaTela <= 700){
             section.appendChild(lista);
+        }
     }else{
         menu.style.display = 'none';
         // Quando o menu não estiver acionado vai voltar para a coloração padrão
