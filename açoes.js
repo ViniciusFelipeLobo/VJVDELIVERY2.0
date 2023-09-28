@@ -57,7 +57,8 @@ botoes[0].addEventListener('click', ()=>{
         }
     }else{
         menu.style.display = 'none';
-        // Quando o menu não estiver acionado vai voltar para a coloração padrão
+        /* Enquanto o menu estiver acionado o botão vai ficar nesse coloração
+        tambem evitando do outro botão ficar acionado*/
         if(linkCss.getAttribute('href') === 'style.css'){
             botoes[0].style.backgroundColor = '#8257e5';
             botoes[0].style.color = '#ffffff'
@@ -73,8 +74,9 @@ botoes[1].addEventListener('click', ()=>{
     if(sobre.style.display == 'none'){
         sobre.style.display = 'block';
         menu.style.display = 'none';
-        // Enquanto o sobre estiver acionado o botão vai ficar nesse coloração
-        if(linkCss.getAttribute('href') === 'style.css'){
+        /* Enquanto o sobre estiver acionado o botão vai ficar nesse coloração
+        tambem evitando do outro botão ficar acionado*/
+       if(linkCss.getAttribute('href') === 'style.css'){
             botoes[1].style.backgroundColor = '#7f7f80';
             botoes[0].style.backgroundColor = '#8257e5';
             botoes[0].style.color = '#ffffff';
