@@ -12,7 +12,6 @@ botaoDarkLight.addEventListener('click', ()=>{
     }
 })
 //Colocando a lista de maneira reponsiva para dispositivos Móveis.
-const nav = document.querySelector('nav');
 const menu = document.querySelector('#menu');
 const lista = document.querySelector('ul')
 const larguraDaTela = window.innerWidth;
@@ -31,10 +30,7 @@ botoes[0].addEventListener('click', ()=>{
         }
         // Aqui se a largura da tela estiver para dispositivos movéis vai fazer uma alteração de desing
         if(larguraDaTela <= 700){
-        nav.removeChild(lista);
-        section.appendChild(lista);
-
-    }
+            section.appendChild(lista);
     }else{
         menu.style.display = 'none';
         // Quando o menu não estiver acionado vai voltar para a coloração padrão
