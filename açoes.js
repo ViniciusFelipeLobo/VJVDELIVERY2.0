@@ -11,12 +11,17 @@ botaoDarkLight.addEventListener('click', ()=>{
         if(menu.style.display == 'block'){
             botoes[0].style.backgroundColor = '#ffffff';
             botoes[0].style.color = '#8257e5';
+        }else if(sobre.style.display == 'block'){
+            botoes[1].style.backgroundColor = '#ffffff';
+            botoes[1].style.color = '#8257e5';
         }
     }else{
         linkCss.setAttribute('href', 'style.css');
-                //alteração para não ocorrer bugs quando trocar de light para dar e o botao estiver acionado
+        //alteração para não ocorrer bugs quando trocar de light para dar e o botao estiver acionado
         if(menu.style.display == 'block'){
-        botoes[0].style.backgroundColor = '#7f7f80';
+            botoes[0].style.backgroundColor = '#7f7f80';
+        }else if(sobre.style.display == 'block'){
+            botoes[1].style.backgroundColor = '#7f7f80';
         }
     }
 })
