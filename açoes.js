@@ -19,7 +19,11 @@ const larguraDaTela = window.innerWidth;
 const section = document.querySelector('section');
 const botoes = document.getElementsByTagName('button');
 botoes[0].addEventListener('click', ()=>{
-    botoes[0].style.backgroundColor = '#7f7f80';
+    if(linkCss.getAttribute('href') === 'style.css'){
+        botoes[0].style.backgroundColor = '#7f7f80';
+    }else{
+        botoes[0].style.backgroundColor = '#ffffff';
+    }
     if(menu.style.display == 'none'){
         menu.style.display = 'block';
         if(larguraDaTela <= 700){
