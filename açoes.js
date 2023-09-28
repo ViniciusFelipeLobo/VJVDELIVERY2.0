@@ -17,9 +17,9 @@ const menu = document.querySelector('#menu');
 const lista = document.querySelector('ul')
 const larguraDaTela = window.innerWidth;
 const section = document.querySelector('section');
-const btnMenu = document.querySelector('#btnMenu');
-btnMenu.addEventListener('click', ()=>{
-    btnMenu.classList.toggle("btnClicar")
+const botoes = document.getElementsByTagName('button');
+botoes[0].addEventListener('click', ()=>{
+    botoes[0].style.backgroundColor = '#7f7f80';
     if(menu.style.display == 'none'){
         menu.style.display = 'block';
         if(larguraDaTela <= 700){
@@ -29,6 +29,7 @@ btnMenu.addEventListener('click', ()=>{
     }
     }else{
         menu.style.display = 'none';
+        botoes[0].style.backgroundColor = '#8257e5';
 
     }
 

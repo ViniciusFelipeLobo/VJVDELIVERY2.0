@@ -200,9 +200,7 @@ footer{
         padding: 0 1rem;
         cursor: pointer;
     }
-    .btnClicar{
-        background-color: var(--cor-principal);
-    }
+
     .material-symbols-outlined{
         padding-left: .1rem;
     }
