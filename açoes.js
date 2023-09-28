@@ -22,6 +22,7 @@ botaoDarkLight.addEventListener('click', ()=>{
 })
 //Colocando a lista de maneira reponsiva para dispositivos Móveis.
 const menu = document.querySelector('#menu');
+const sobre = document.querySelector('#sobre');
 const lista = document.querySelector('ul')
 const larguraDaTela = window.innerWidth;
 const section = document.querySelector('section');
@@ -52,6 +53,36 @@ botoes[0].addEventListener('click', ()=>{
         }else{
             botoes[0].style.backgroundColor = '#8257e5';
             botoes[0].style.color = '#ffffff'
+        }
+    }
+
+})
+botoes[1].addEventListener('click', ()=>{
+    // Quando o evento de clique for acionado mostrar o menu 
+    if(sobre.style.display == 'none'){
+        sobre.style.display = 'block';
+        // Enquanto o sobre estiver acionado o botão vai ficar nesse coloração
+        if(linkCss.getAttribute('href') === 'style.css'){
+            botoes[1].style.backgroundColor = '#7f7f80';
+        }else{
+            botoes[1].style.backgroundColor = '#ffffff';
+            botoes[1].style.color = '#8257e5';
+        }
+        /* Aqui se a largura da tela estiver para dispositivos movéis vai fazer uma 
+        alteração de desing, tirando a lista de naveção do header e colocando ela na area 
+        do section*/
+        if(larguraDaTela <= 700){
+            section.appendChild(lista);
+        }
+    }else{
+        sobre.style.display = 'none';
+        // Quando o sobre não estiver acionado vai voltar para a coloração padrão
+        if(linkCss.getAttribute('href') === 'style.css'){
+            botoes[1].style.backgroundColor = '#8257e5';
+            botoes[1].style.color = '#ffffff'
+        }else{
+            botoes[1].style.backgroundColor = '#8257e5';
+            botoes[1].style.color = '#ffffff'
         }
     }
 
