@@ -227,14 +227,8 @@ footer{
     input[data-lucide="check"] {
         display: none;
     }
-    .selector:has(input:checked) [data-lucide="check"] {
+    a:hover [data-lucide="check"] {
         display: block;
-    }
-    input[type="radio"]{
-        all: unset;
-        inset: 0;
-        position: absolute;
-        cursor: pointer;
     }
     section{
         background: url(imagens/vjv2.png);
