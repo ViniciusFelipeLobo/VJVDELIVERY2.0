@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" id="css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>VJV DELIVERY</title>
 </head>
 <body>
-    <p>SEJA BEM VINDO!</p>
+    <header>
+        <div id="logo"><p id="titulo">VJV DELIVERY</p><div id="desing"><div class="desing-logo"></div><p id="sub-titulo">desde 2021</p>
+        <div class="desing-logo"></div></div></div>
+        <nav>
+            <ul id="menu">
+                <a href="cardapio_lanches.html" class="selector"><input type="radio" name="inputRd"> <i data-lucide="Sandwich" class="chevrons"></i><li>LANCHES</li> <i data-lucide="check" class="chevrons1"></i></a>
+                <div class="selector"> <input type="radio" name="inputRd"> <i data-lucide="croissant" class="chevrons"></i><li>PASTÉIS</li><i data-lucide="check" class="chevrons1"></i></div>
+                <div class="selector"> <input type="radio" name="inputRd"> <i data-lucide="ice-cream-2" class="chevrons"></i><li>AÇAÍS</li><i data-lucide="check" class="chevrons1"></i></div>
+                <div class="selector"> <input type="radio" name="inputRd"> <i data-lucide="cup-soda" class="chevrons"></i><li>VITAMINAS</li><i data-lucide="check" class="chevrons1"></i></div>
+                <div class="selector"> <input type="radio" name="inputRd"> <i data-lucide="beer" class="chevrons"></i><li>BEBIDAS EM GERAL</li><i data-lucide="check" class="chevrons1"></i></div>
+            </ul>
+            <button id="btnMenu">Menu</button>
+            <button id="btnSobre">Sobre</button>
+            <span class="material-symbols-outlined">brightness_medium</span>
+        </nav>
+    </header>
+    <section>
+        <ul id="sobre">
+            <div class="selector"> <input type="radio" name="inputRd"> <i data-lucide="Smartphone" class="chevrons"></i><li>CONTATO</li> <i data-lucide="check" class="chevrons1"></i></div>
+            <div class="selector"> <input type="radio" name="inputRd"> <i data-lucide="book-marked" class="chevrons"></i><li>QUEM SOMOS NÓS</li> <i data-lucide="check" class="chevrons1"></i></div>
+            <div class="selector"> <input type="radio" name="inputRd"> <i data-lucide="wallet" class="chevrons"></i><li>FORMAS DE PAGAMENTOS</li> <i data-lucide="check" class="chevrons1"></i></div>
+        </ul>
+    </section>
+    <footer><p id="reconhecimento">Desenvolvido por <a href="">@Vinicius Felipe</a></p></footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="açoes.js"></script>
 </body>
 </html>
