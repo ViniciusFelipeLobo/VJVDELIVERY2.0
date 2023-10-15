@@ -24,14 +24,16 @@ botaoDarkLight.addEventListener('click', ()=>{
         }
     }else{
         linkCss.setAttribute('href', 'CSS/style.css');
-        //alteração para não ocorrer bugs quando trocar de light para dar e o botao estiver acionado
+        //alteração para não ocorrer bugs quando trocar de light para dark e o botao estiver acionado
         if(menu.style.display == 'block'){
             botoes[0].style.backgroundColor = '#7f7f80';
             botoes[0].style.color = '#ffffff';
         }else if(sobre.style.display == 'block'){
             botoes[1].style.backgroundColor = '#7f7f80';
             botoes[1].style.color = '#ffffff';
-        }else if(table.style.display = 'flex'){
+        }
+        //Quando o cardapio de lanches estiver aberto e trocar de tela vai trocar a cor de light para dark quando acionado o botão 
+        else if(table.style.display = 'flex'){
             botoes[0].style.backgroundColor = '#7f7f80';
             botoes[0].style.color = '#ffffff';
         }
