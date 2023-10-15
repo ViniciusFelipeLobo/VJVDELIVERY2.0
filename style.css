@@ -147,7 +147,7 @@ table {
   th, td {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0 .5rem;
     text-align: left;
 
   }
@@ -155,11 +155,13 @@ table {
     grid-area: produto;
   }
   .valor{
+    display: flex;
+    justify-content: end;
     grid-area: valor;
   }
   .descricao{
     grid-area: descricao;
-    font-size: .5rem;
+    font-size: .7rem;
   }
 footer{
     background-color: var(--cor-branca);
