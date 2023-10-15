@@ -1,5 +1,9 @@
  //importando os icones do desing.
 lucide.createIcons();
+
+//DECLARAÇÃO DAS VARIAVEIS
+const menu = document.querySelector('#menu'), sobre = document.querySelector('#sobre'), lista = document.querySelector('ul'), larguraDaTela = window.innerWidth, section = document.querySelector('section'), botoes = document.getElementsByTagName('button'), seletorLanches = document.getElementById('seletorlanches'), table = document.querySelector('table');;
+
 //trocando a pagina de light para dark e também operando com uma animação.
 const linkCss = document.querySelector('#css');
 const botaoDarkLight = document.querySelector('.material-symbols-outlined');
@@ -28,12 +32,6 @@ botaoDarkLight.addEventListener('click', ()=>{
     }
 })
 //Colocando a lista de maneira reponsiva para dispositivos Móveis.
-const menu = document.querySelector('#menu');
-const sobre = document.querySelector('#sobre');
-const lista = document.querySelector('ul')
-const larguraDaTela = window.innerWidth;
-const section = document.querySelector('section');
-const botoes = document.getElementsByTagName('button');
 botoes[0].addEventListener('click', ()=>{
     if(menu.style.display == 'none' && table.style.display == 'flex'){
         table.style.display = 'none';
@@ -116,8 +114,6 @@ botoes[1].addEventListener('click', ()=>{
 
 })
 // Seleção dos Botões do cardápio para abrir as opções desejadas, esse código abaixo é usado também na linha 62,63
-const seletorLanches = document.getElementById('seletorlanches');
-const table = document.querySelector('table');
 seletorLanches.addEventListener('click', ()=>{
     if(seletorLanches.checked){
         table.style.display = 'flex';
