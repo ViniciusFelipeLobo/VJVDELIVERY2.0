@@ -132,6 +132,7 @@ table {
     border-collapse: collapse;
     background-color: var(--cor-branca);
     justify-content: space-between;
+    z-index: 1001;
   }
   tbody{
     width: 100%;
