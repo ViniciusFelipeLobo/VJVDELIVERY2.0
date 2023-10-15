@@ -125,12 +125,12 @@ section{
     display: none;
 }
 table {
+    display: none;
     position: absolute;
     width: 100vw;
     height: 100%;
     border-collapse: collapse;
     background-color: var(--cor-branca);
-    display: flex;
     justify-content: space-between;
   }
   tbody{
