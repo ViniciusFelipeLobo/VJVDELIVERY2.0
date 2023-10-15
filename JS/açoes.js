@@ -61,19 +61,19 @@ botoes[0].addEventListener('click', ()=>{
         if(larguraDaTela <= 700){
             section.appendChild(lista);
         }
-    }else{
+    }/*else{
         menu.style.display = 'none';
         //aqui toda vez que for fechada a lista o cardapio é fechado junto
         /* Enquanto o menu estiver acionado o botão vai ficar nesse coloração
         tambem evitando do outro botão ficar acionado*/
-        if(linkCss.getAttribute('href') === 'CSS/style.css'){
+       /* if(linkCss.getAttribute('href') === 'CSS/style.css'){
             botoes[0].style.backgroundColor = '#8257e5';
             botoes[0].style.color = '#ffffff'
         }else{
             botoes[0].style.backgroundColor = '#8257e5';
             botoes[0].style.color = '#ffffff'
         }
-    }
+    }*/
 
 })
 botoes[1].addEventListener('click', ()=>{

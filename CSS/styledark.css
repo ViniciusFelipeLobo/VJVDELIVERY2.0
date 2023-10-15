@@ -123,6 +123,51 @@ section{
 #sobre{
     display: none;
 }
+
+table {
+    display: none;
+    width: 100vw;
+    height: 100%;
+    border-collapse: collapse;
+    background-color: var(--cor-de-fundo);
+    justify-content: space-between;
+    }
+    tbody{
+    width: 100%;
+    }
+    tr{
+    display: grid;
+    grid: 
+    'produto valor'
+    'descricao descricao'
+    ;
+    width: 100vw;
+    border-bottom: 1px solid var(--cor-branca);
+    }
+    th, td {
+    color: var(--cor-branca);
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: .5rem 1rem 0rem 1rem;
+    }
+    th{
+        justify-content: start;
+    }
+    .nomeProduto{
+    grid-area: produto;
+    color: var(--cor-branca);
+    }
+    .valor{
+    display: flex;
+    justify-content: end;
+    grid-area: valor;
+    }
+    .descricao{
+    grid-area: descricao;
+    font-size: .7rem;
+    padding: 0 0 .5rem 1rem;
+    }
 footer{
     height: 8%;
     display: flex;
@@ -180,51 +225,6 @@ footer{
         width: 100%;
         height: calc(100vh - 3rem);
         z-index: 1000;
-        }
-
-    table {
-        width: 100vw;
-        height: 100%;
-        border-collapse: collapse;
-        background-color: var(--cor-de-fundo);
-        display: flex;
-        justify-content: space-between;
-        }
-        tbody{
-        width: 100%;
-        }
-        tr{
-        display: grid;
-        grid: 
-        'produto valor'
-        'descricao descricao'
-        ;
-        width: 100vw;
-        border-bottom: 1px solid var(--cor-branca);
-        }
-        th, td {
-        color: var(--cor-branca);
-        display: flex;
-        justify-content: space-between;
-        text-align: left;
-        padding: .5rem 1rem 0rem 1rem;
-        }
-        th{
-            justify-content: start;
-        }
-        .nomeProduto{
-        grid-area: produto;
-        color: var(--cor-branca);
-        }
-        .valor{
-        display: flex;
-        justify-content: end;
-        grid-area: valor;
-        }
-        .descricao{
-        grid-area: descricao;
-        font-size: .7rem;
-        padding: 0 0 .5rem 1rem;
         }
     .chevrons{
         display: flex;
