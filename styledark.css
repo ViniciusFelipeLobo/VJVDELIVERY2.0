@@ -201,13 +201,13 @@ footer{
         ;
         width: 100vw;
         border-bottom: 1px solid var(--cor-branca);
-        padding: .5rem 1rem;
         }
         th, td {
         color: var(--cor-branca);
         display: flex;
         justify-content: space-between;
         text-align: left;
+        padding: .5rem 1rem 0rem 1rem;
         }
         .nomeProduto{
         grid-area: produto;
@@ -221,6 +221,7 @@ footer{
         .descricao{
         grid-area: descricao;
         font-size: .7rem;
+        padding: 0 0 .5rem 1rem;
         }
     .chevrons{
         display: flex;
