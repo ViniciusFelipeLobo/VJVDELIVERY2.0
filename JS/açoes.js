@@ -18,6 +18,9 @@ botaoDarkLight.addEventListener('click', ()=>{
         }else if(sobre.style.display == 'block'){
             botoes[1].style.backgroundColor = '#ffffff';
             botoes[1].style.color = '#8257e5';
+        }else if(table.style.display = 'flex'){
+            botoes[0].style.backgroundColor = '#ffffff';
+            botoes[0].style.color = '#8257e5';
         }
     }else{
         linkCss.setAttribute('href', 'CSS/style.css');
@@ -28,6 +31,9 @@ botaoDarkLight.addEventListener('click', ()=>{
         }else if(sobre.style.display == 'block'){
             botoes[1].style.backgroundColor = '#7f7f80';
             botoes[1].style.color = '#ffffff';
+        }else if(table.style.display = 'flex'){
+            botoes[0].style.backgroundColor = '#7f7f80';
+            botoes[0].style.color = '#ffffff';
         }
     }
 })
