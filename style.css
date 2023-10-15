@@ -137,7 +137,10 @@ table {
   }
   tr{
     display: grid;
-    grid-template: 1fr / 1fr 1fr;
+    grid: 
+    'produto valor'
+    'descricao descricao'
+    ;
     width: 100vw;
     border-bottom: 1px solid #ccc;
   }
@@ -147,6 +150,16 @@ table {
     padding: 10px;
     text-align: left;
 
+  }
+  .nomeProduto{
+    grid-area: produto;
+  }
+  .valor{
+    grid-area: valor;
+  }
+  .descricao{
+    grid-area: descricao;
+    font-size: .5rem;
   }
 footer{
     background-color: var(--cor-branca);
