@@ -64,7 +64,6 @@ botoes[0].addEventListener('click', ()=>{
     }else{
         menu.style.display = 'none';
         //aqui toda vez que for fechada a lista o cardapio é fechado junto
-        table.style.display ='none';
         /* Enquanto o menu estiver acionado o botão vai ficar nesse coloração
         tambem evitando do outro botão ficar acionado*/
         if(linkCss.getAttribute('href') === 'CSS/style.css'){
