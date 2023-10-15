@@ -151,6 +151,9 @@ table {
     text-align: left;
     padding: .5rem 1rem 0rem 1rem;
   }
+  th{
+    justify-content: start;
+  }
   .nomeProduto{
     grid-area: produto;
   }
