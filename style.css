@@ -143,13 +143,12 @@ table {
     ;
     width: 100vw;
     border-bottom: 1px solid #ccc;
+    padding: .5rem 1rem;
   }
   th, td {
     display: flex;
     justify-content: space-between;
-    padding: .3rem .5rem;
     text-align: left;
-
   }
   .nomeProduto{
     grid-area: produto;
