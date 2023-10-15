@@ -9,8 +9,8 @@ const linkCss = document.querySelector('#css');
 const botaoDarkLight = document.querySelector('.material-symbols-outlined');
 botaoDarkLight.addEventListener('click', ()=>{
     botaoDarkLight.setAttribute('id', 'rotate');
-    if(linkCss.getAttribute('href') ==='style.css'){
-        linkCss.setAttribute('href', 'styledark.css');
+    if(linkCss.getAttribute('href') ==='CSS/style.css'){
+        linkCss.setAttribute('href', 'CSS/styledark.css');
         //alteração para não ocorrer bugs quando trocar de light para dar e o botao estiver acionado
         if(menu.style.display == 'block'){
             botoes[0].style.backgroundColor = '#ffffff';
@@ -20,7 +20,7 @@ botaoDarkLight.addEventListener('click', ()=>{
             botoes[1].style.color = '#8257e5';
         }
     }else{
-        linkCss.setAttribute('href', 'style.css');
+        linkCss.setAttribute('href', 'CSS/style.css');
         //alteração para não ocorrer bugs quando trocar de light para dar e o botao estiver acionado
         if(menu.style.display == 'block'){
             botoes[0].style.backgroundColor = '#7f7f80';
@@ -44,7 +44,7 @@ botoes[0].addEventListener('click', ()=>{
         menu.style.display = 'block';
         sobre.style.display = 'none';
         // Enquanto o menu estiver acionado o botão vai ficar nesse coloração
-        if(linkCss.getAttribute('href') === 'style.css'){
+        if(linkCss.getAttribute('href') === 'CSS/style.css'){
             botoes[0].style.backgroundColor = '#7f7f80';
             botoes[1].style.backgroundColor = '#8257e5';
             botoes[1].style.color = '#ffffff';
@@ -67,7 +67,7 @@ botoes[0].addEventListener('click', ()=>{
         table.style.display ='none';
         /* Enquanto o menu estiver acionado o botão vai ficar nesse coloração
         tambem evitando do outro botão ficar acionado*/
-        if(linkCss.getAttribute('href') === 'style.css'){
+        if(linkCss.getAttribute('href') === 'CSS/style.css'){
             botoes[0].style.backgroundColor = '#8257e5';
             botoes[0].style.color = '#ffffff'
         }else{
@@ -84,7 +84,7 @@ botoes[1].addEventListener('click', ()=>{
         menu.style.display = 'none';
         /* Enquanto o sobre estiver acionado o botão vai ficar nesse coloração
         tambem evitando do outro botão ficar acionado*/
-       if(linkCss.getAttribute('href') === 'style.css'){
+       if(linkCss.getAttribute('href') === 'CSS/style.css'){
             botoes[1].style.backgroundColor = '#7f7f80';
             botoes[0].style.backgroundColor = '#8257e5';
             botoes[0].style.color = '#ffffff';
@@ -103,7 +103,7 @@ botoes[1].addEventListener('click', ()=>{
     }else{
         sobre.style.display = 'none';
         // Quando o sobre não estiver acionado vai voltar para a coloração padrão
-        if(linkCss.getAttribute('href') === 'style.css'){
+        if(linkCss.getAttribute('href') === 'CSS/style.css'){
             botoes[1].style.backgroundColor = '#8257e5';
             botoes[1].style.color = '#ffffff'
         }else{
