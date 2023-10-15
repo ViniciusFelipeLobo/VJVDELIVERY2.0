@@ -136,8 +136,8 @@ table {
     width: 100%;
   }
   tr{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
     width: 100vw;
     border-bottom: 1px solid #ccc;
   }
