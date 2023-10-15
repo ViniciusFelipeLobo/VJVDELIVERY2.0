@@ -186,7 +186,7 @@ footer{
         width: 100vw;
         height: 100%;
         border-collapse: collapse;
-        background-color: var(--cor-branca);
+        background-color: var(--cor-de-fundo);
         display: flex;
         justify-content: space-between;
         }
@@ -200,17 +200,18 @@ footer{
         'descricao descricao'
         ;
         width: 100vw;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid var(--cor-branca);
         }
         th, td {
+        color: var(--cor-branca);
         display: flex;
         justify-content: space-between;
         padding: .3rem .5rem;
         text-align: left;
-    
         }
         .nomeProduto{
         grid-area: produto;
+        color: var(--cor-branca);
         }
         .valor{
         display: flex;
