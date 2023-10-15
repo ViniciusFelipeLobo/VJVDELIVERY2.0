@@ -181,6 +181,46 @@ footer{
         height: calc(100vh - 3rem);
         z-index: 1000;
         }
+
+    table {
+        width: 100vw;
+        height: 100%;
+        border-collapse: collapse;
+        background-color: var(--cor-branca);
+        display: flex;
+        justify-content: space-between;
+        }
+        tbody{
+        width: 100%;
+        }
+        tr{
+        display: grid;
+        grid: 
+        'produto valor'
+        'descricao descricao'
+        ;
+        width: 100vw;
+        border-bottom: 1px solid #ccc;
+        }
+        th, td {
+        display: flex;
+        justify-content: space-between;
+        padding: .3rem .5rem;
+        text-align: left;
+    
+        }
+        .nomeProduto{
+        grid-area: produto;
+        }
+        .valor{
+        display: flex;
+        justify-content: end;
+        grid-area: valor;
+        }
+        .descricao{
+        grid-area: descricao;
+        font-size: .7rem;
+        }
     .chevrons{
         display: flex;
         stroke: var(--cor-branca);
