@@ -35,8 +35,14 @@ const larguraDaTela = window.innerWidth;
 const section = document.querySelector('section');
 const botoes = document.getElementsByTagName('button');
 botoes[0].addEventListener('click', ()=>{
+    if(menu.style.display == 'none' && table.style.display == 'flex'){
+        table.style.display = 'none';
+        menu.style.display = 'none';
+        botoes[0].style.backgroundColor = '#8257e5';
+        botoes[0].style.color = '#ffffff'
+    }
     // Quando o evento de clique for acionado mostrar o menu 
-    if(menu.style.display == 'none'){
+    else if(menu.style.display == 'none'){
         menu.style.display = 'block';
         sobre.style.display = 'none';
         // Enquanto o menu estiver acionado o botão vai ficar nesse coloração
@@ -115,6 +121,8 @@ const table = document.querySelector('table');
 seletorLanches.addEventListener('click', ()=>{
     if(seletorLanches.checked){
         table.style.display = 'flex';
+        menu.style.display = 'none';
+
     }
 })
 
