@@ -201,12 +201,12 @@ footer{
         ;
         width: 100vw;
         border-bottom: 1px solid var(--cor-branca);
+        padding: .5rem 1rem;
         }
         th, td {
         color: var(--cor-branca);
         display: flex;
         justify-content: space-between;
-        padding: .3rem .5rem;
         text-align: left;
         }
         .nomeProduto{
