@@ -147,7 +147,7 @@ table {
   th, td {
     display: flex;
     justify-content: space-between;
-    padding: 0 .5rem;
+    padding: .3rem .5rem;
     text-align: left;
 
   }
