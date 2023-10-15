@@ -1,4 +1,4 @@
-//importando os icones do desing.
+ //importando os icones do desing.
 lucide.createIcons();
 //trocando a pagina de light para dark e também operando com uma animação.
 const linkCss = document.querySelector('#css');
