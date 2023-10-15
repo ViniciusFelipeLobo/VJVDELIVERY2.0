@@ -124,6 +124,30 @@ section{
 #sobre{
     display: none;
 }
+table {
+    width: 100vw;
+    height: 100%;
+    border-collapse: collapse;
+    background-color: var(--cor-branca);
+    display: flex;
+    justify-content: space-between;
+  }
+  tbody{
+    width: 100%;
+  }
+  tr{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    border-bottom: 1px solid #ccc;
+  }
+  th, td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: left;
+
+  }
 footer{
     background-color: var(--cor-branca);
     height: 8%;
@@ -227,8 +251,14 @@ footer{
     input[data-lucide="check"] {
         display: none;
     }
-    a:hover [data-lucide="check"] {
+    .selector:has(input:checked) [data-lucide="check"] {
         display: block;
+    }
+    input[type="radio"]{
+        all: unset;
+        inset: 0;
+        position: absolute;
+        cursor: pointer;
     }
     section{
         background: url(imagens/vjv2.png);
