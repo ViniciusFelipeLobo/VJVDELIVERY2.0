@@ -11,7 +11,7 @@ botaoDarkLight.addEventListener('click', ()=>{
     botaoDarkLight.setAttribute('id', 'rotate');
     if(linkCss.getAttribute('href') ==='CSS/style.css'){
         linkCss.setAttribute('href', 'CSS/styledark.css');
-        //alteração para não ocorrer bugs quando trocar de light para dar e o botao estiver acionado
+        //alteração para não ocorrer bugs quando trocar de light para dark e o botao estiver acionado
         if(menu.style.display == 'block'){
             botoes[0].style.backgroundColor = '#ffffff';
             botoes[0].style.color = '#8257e5';
