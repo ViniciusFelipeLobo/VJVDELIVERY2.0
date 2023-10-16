@@ -168,15 +168,17 @@ table {
     font-size: .7rem;
     padding: 0 0 .5rem 1rem;
     }
-footer{
-    height: 8%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font: bolder 1rem 'poppins', sans-serif;
-    color: var(--cor-branca);
-    text-align: center;
-}
+    footer{
+        background-color: var(--cor-de-fundo);
+        height: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font: bolder 1rem 'poppins', sans-serif;
+        color: var(--cor-branca);
+        text-align: center;
+    }
 #reconhecimento{
     color: var(--cor-destaque);
 }
