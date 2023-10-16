@@ -89,6 +89,7 @@ botoes[1].addEventListener('click', ()=>{
     if(sobre.style.display == 'none'){
         sobre.style.display = 'block';
         menu.style.display = 'none';
+        table.style.display = 'none';
         /* Enquanto o sobre estiver acionado o botão vai ficar nesse coloração
         tambem evitando do outro botão ficar acionado*/
        if(linkCss.getAttribute('href') === 'CSS/style.css'){
