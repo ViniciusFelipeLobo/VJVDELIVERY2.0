@@ -133,6 +133,9 @@ table {
     background-color: var(--cor-branca);
     justify-content: space-between;
   }
+  #tablehotdogs{
+    display: block;
+  }
   tbody{
     width: 100%;
   }
