@@ -18,7 +18,7 @@ botaoDarkLight.addEventListener('click', ()=>{
         }else if(sobre.style.display == 'block'){
             botoes[1].style.backgroundColor = '#ffffff';
             botoes[1].style.color = '#8257e5';
-        }else if(table.style.display = 'flex'){
+        }else if(table.style.display == 'flex'){
             botoes[0].style.backgroundColor = '#ffffff';
             botoes[0].style.color = '#8257e5';
         }
@@ -33,7 +33,7 @@ botaoDarkLight.addEventListener('click', ()=>{
             botoes[1].style.color = '#ffffff';
         }
         //Quando o cardapio de lanches estiver aberto e trocar de tela vai trocar a cor de dark para light quando acionado o botão 
-        else if(table.style.display = 'flex'){
+        else if(table.style.display == 'flex'){
             botoes[0].style.backgroundColor = '#7f7f80';
             botoes[0].style.color = '#ffffff';
         }
