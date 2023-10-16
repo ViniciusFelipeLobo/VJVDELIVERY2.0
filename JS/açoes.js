@@ -2,7 +2,7 @@
 lucide.createIcons();
 
 //DECLARAÇÃO DAS VARIAVEIS
-const menu = document.querySelector('#menu'), sobre = document.querySelector('#sobre'), lista = document.querySelector('ul'), larguraDaTela = window.innerWidth, section = document.querySelector('section'), botoes = document.getElementsByTagName('button'), seletorLanches = document.getElementById('seletorlanches'), seletorHotdogs = document.getElementById('seletorhotdogs'), tableLanches = document.getElementById('tablelanches'), table = document.querySelector('table');
+const menu = document.querySelector('#menu'), sobre = document.querySelector('#sobre'), lista = document.querySelector('ul'), larguraDaTela = window.innerWidth, section = document.querySelector('section'), botoes = document.getElementsByTagName('button'), seletorLanches = document.getElementById('seletorlanches'), seletorHotdogs = document.getElementById('seletorhotdogs'), tableLanches = document.getElementById('tablelanches'),tableHotDogs = document.getElementById('tablehotdogs'), table = document.querySelector('table');
 
 //trocando a pagina de light para dark e também operando com uma animação.
 const linkCss = document.querySelector('#css');
@@ -125,6 +125,13 @@ botoes[1].addEventListener('click', ()=>{
 seletorLanches.addEventListener('click', ()=>{
     if(seletorLanches.checked){
         tableLanches.style.display = 'flex';
+        menu.style.display = 'none';
+
+    }
+})
+seletorHotdogs.addEventListener('click', ()=>{
+    if(seletorHotdogs.checked){
+        tableHotDogs.style.display = 'flex';
         menu.style.display = 'none';
 
     }
