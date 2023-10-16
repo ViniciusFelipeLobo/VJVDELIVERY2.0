@@ -2,7 +2,7 @@
 lucide.createIcons();
 
 //DECLARAÇÃO DAS VARIAVEIS
-const menu = document.querySelector('#menu'), sobre = document.querySelector('#sobre'), lista = document.querySelector('ul'), larguraDaTela = window.innerWidth, section = document.querySelector('section'), botoes = document.getElementsByTagName('button'), seletorLanches = document.getElementById('seletorlanches'), table = document.querySelector('table');;
+const menu = document.querySelector('#menu'), sobre = document.querySelector('#sobre'), lista = document.querySelector('ul'), larguraDaTela = window.innerWidth, section = document.querySelector('section'), botoes = document.getElementsByTagName('button'), seletorLanches = document.getElementById('seletorlanches'), table = document.querySelector('table');
 
 //trocando a pagina de light para dark e também operando com uma animação.
 const linkCss = document.querySelector('#css');
