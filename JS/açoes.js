@@ -2,7 +2,7 @@
 lucide.createIcons();
 
 //DECLARAÇÃO DAS VARIAVEIS
-const menu = document.querySelector('#menu'), sobre = document.querySelector('#sobre'), lista = document.querySelector('ul'), larguraDaTela = window.innerWidth, section = document.querySelector('section'), botoes = document.getElementsByTagName('button'), seletorLanches = document.getElementById('seletorlanches'), tablelanches = document.querySelector('#tablelanches');
+const menu = document.querySelector('#menu'), sobre = document.querySelector('#sobre'), lista = document.querySelector('ul'), larguraDaTela = window.innerWidth, section = document.querySelector('section'), botoes = document.getElementsByTagName('button'), seletorLanches = document.getElementById('seletorlanches'), seletorHotdogs = document.getElementById('seletorhotdogs'), tableLanches = document.getElementById('tablelanches'), table = document.querySelector('table');
 
 //trocando a pagina de light para dark e também operando com uma animação.
 const linkCss = document.querySelector('#css');
@@ -18,7 +18,7 @@ botaoDarkLight.addEventListener('click', ()=>{
         }else if(sobre.style.display == 'block'){
             botoes[1].style.backgroundColor = '#ffffff';
             botoes[1].style.color = '#8257e5';
-        }else if(tablelanches.style.display == 'flex'){
+        }else if(table.style.display == 'flex'){
             botoes[0].style.backgroundColor = '#ffffff';
             botoes[0].style.color = '#8257e5';
         }
@@ -33,7 +33,7 @@ botaoDarkLight.addEventListener('click', ()=>{
             botoes[1].style.color = '#ffffff';
         }
         //Quando o cardapio de lanches estiver aberto e trocar de tela vai trocar a cor de dark para light quando acionado o botão 
-        else if(tablelanches.style.display == 'flex'){
+        else if(table.style.display == 'flex'){
             botoes[0].style.backgroundColor = '#7f7f80';
             botoes[0].style.color = '#ffffff';
         }
@@ -41,8 +41,8 @@ botaoDarkLight.addEventListener('click', ()=>{
 })
 //Colocando a lista de maneira reponsiva para dispositivos Móveis.
 botoes[0].addEventListener('click', ()=>{
-    if(menu.style.display == 'none' && tablelanches.style.display == 'flex'){
-        tablelanches.style.display = 'none';
+    if(menu.style.display == 'none' && table.style.display == 'flex'){
+        table.style.display = 'none';
         menu.style.display = 'none';
         botoes[0].style.backgroundColor = '#8257e5';
         botoes[0].style.color = '#ffffff'
@@ -89,7 +89,7 @@ botoes[1].addEventListener('click', ()=>{
     if(sobre.style.display == 'none'){
         sobre.style.display = 'block';
         menu.style.display = 'none';
-        tablelanches.style.display = 'none';
+        table.style.display = 'none';
         /* Enquanto o sobre estiver acionado o botão vai ficar nesse coloração
         tambem evitando do outro botão ficar acionado*/
        if(linkCss.getAttribute('href') === 'CSS/style.css'){
@@ -124,7 +124,7 @@ botoes[1].addEventListener('click', ()=>{
 // Seleção dos Botões do cardápio para abrir as opções desejadas, esse código abaixo é usado também na linha 62,63
 seletorLanches.addEventListener('click', ()=>{
     if(seletorLanches.checked){
-        tablelanches.style.display = 'flex';
+        tableLanches.style.display = 'flex';
         menu.style.display = 'none';
 
     }
