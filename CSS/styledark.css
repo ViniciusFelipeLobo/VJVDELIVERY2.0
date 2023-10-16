@@ -286,7 +286,12 @@ footer{
     }
 
 }
-@media (max-width:390px){
+@media (max-width: 390px){
+    button{
+        padding: 0 .7rem;
+    }
+}
+@media (max-width: 374px){
     html, body{
         height: 87vh;
     }
@@ -301,8 +306,9 @@ footer{
     }
     button{
    padding: 0 0rem;
-    }footer{
-        position: fixed;
-        bottom: 0;
+    }
+    footer{
+    position: fixed;
+    bottom: 0;
     }
 }
