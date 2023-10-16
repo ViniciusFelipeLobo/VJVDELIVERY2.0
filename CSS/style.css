@@ -295,14 +295,8 @@ footer{
     }
 }
 @media (max-width: 390px){
-    #titulo{
-        font-size: .9rem;
-    }
-    #sub-titulo{
-        font-size: .5rem;
-    }
-    .desing-logo{
-        width: 1.5rem;
+    button{
+        padding: 0 .7rem;
     }
 }
 @media (max-width: 374px){
@@ -322,7 +316,7 @@ footer{
    padding: 0 0rem;
     }
     footer{
-        position: fixed;
-        bottom: 0;
+    position: fixed;
+    bottom: 0;
     }
 }
