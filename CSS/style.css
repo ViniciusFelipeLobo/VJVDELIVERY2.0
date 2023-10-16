@@ -310,4 +310,8 @@ footer{
     button{
    padding: 0 0rem;
     }
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
 }
