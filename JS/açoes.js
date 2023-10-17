@@ -11,6 +11,13 @@ botaoDarkLight.addEventListener('click', ()=>{
     botaoDarkLight.setAttribute('id', 'rotate');
     if(linkCss.getAttribute('href') ==='CSS/style.css'){
         linkCss.setAttribute('href', 'CSS/styledark.css');
+        let tabelaATiva = false;
+        for(let i = 0; i < table.length; i++){
+            if(table[i].style.display == 'flex'){
+                tabelaATiva = true;
+                break;
+            }
+        }
         //alteração para não ocorrer bugs quando trocar de light para dark e o botao estiver acionado
         if(menu.style.display == 'block'){
             botoes[0].style.backgroundColor = '#ffffff';
@@ -18,12 +25,19 @@ botaoDarkLight.addEventListener('click', ()=>{
         }else if(sobre.style.display == 'block'){
             botoes[1].style.backgroundColor = '#ffffff';
             botoes[1].style.color = '#8257e5';
-        }else if(table.style.display == 'flex'){
+        }else if(tabelaATiva){
             botoes[0].style.backgroundColor = '#ffffff';
             botoes[0].style.color = '#8257e5';
         }
     }else{
         linkCss.setAttribute('href', 'CSS/style.css');
+        let tabelaATiva = false;
+        for(let i = 0; i < table.length; i++){
+            if(table[i].style.display == 'flex'){
+                tabelaATiva = true;
+                break;
+            }
+        }
         //alteração para não ocorrer bugs quando trocar de dark para light e o botao estiver acionado
         if(menu.style.display == 'block'){
             botoes[0].style.backgroundColor = '#7f7f80';
@@ -33,7 +47,7 @@ botaoDarkLight.addEventListener('click', ()=>{
             botoes[1].style.color = '#ffffff';
         }
         //Quando o cardapio de lanches estiver aberto e trocar de tela vai trocar a cor de dark para light quando acionado o botão 
-        else if(table.style.display == 'flex'){
+        else if(tabelaATiva){
             botoes[0].style.backgroundColor = '#7f7f80';
             botoes[0].style.color = '#ffffff';
         }
