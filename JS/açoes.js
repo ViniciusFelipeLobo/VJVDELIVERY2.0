@@ -1,4 +1,4 @@
- //importando os icones do desing.
+//importando os icones do desing.
 lucide.createIcons();
 
 //DECLARAÇÃO DAS VARIAVEIS
