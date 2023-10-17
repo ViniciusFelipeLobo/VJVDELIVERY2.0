@@ -133,9 +133,6 @@ table {
     background-color: var(--cor-branca);
     justify-content: space-between;
   }
-  #tablepasteis{
-    display: flex;
-  }
   tbody{
     width: 100%;
   }
