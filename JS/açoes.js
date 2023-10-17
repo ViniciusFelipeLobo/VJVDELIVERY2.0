@@ -178,6 +178,13 @@ seletorAçais.addEventListener('click', ()=>{
 
     }
 })
+seletorVitaminas.addEventListener('click', ()=>{
+    if(seletorVitaminas.checked){
+        tableVitaminas.style.display = 'flex';
+        menu.style.display = 'none';
+
+    }
+})
 
 
 
