@@ -2,7 +2,7 @@
 lucide.createIcons();
 
 //DECLARAÇÃO DAS VARIAVEIS
-const menu = document.querySelector('#menu'), sobre = document.querySelector('#sobre'), lista = document.querySelector('ul'), larguraDaTela = window.innerWidth, section = document.querySelector('section'), botoes = document.getElementsByTagName('button'), seletorLanches = document.getElementById('seletorlanches'), seletorHotdogs = document.getElementById('seletorhotdogs'), seletorPasteis = document.getElementById('seletorpasteis'), tableLanches = document.getElementById('tablelanches'),tableHotDogs = document.getElementById('tablehotdogs'), tablePasteis = document.getElementById('tablepasteis'), table = document.querySelectorAll('table');
+const menu = document.querySelector('#menu'), sobre = document.querySelector('#sobre'), lista = document.querySelector('ul'), larguraDaTela = window.innerWidth, section = document.querySelector('section'), botoes = document.getElementsByTagName('button'), seletorLanches = document.getElementById('seletorlanches'), seletorHotdogs = document.getElementById('seletorhotdogs'), seletorPasteis = document.getElementById('seletorpasteis'), seletorAçais = document.getElementById('seletoraçais'), tableLanches = document.getElementById('tablelanches'),tableHotDogs = document.getElementById('tablehotdogs'), tablePasteis = document.getElementById('tablepasteis'), tableAçais = document.getElementById('tableaçais'), table = document.querySelectorAll('table');
 
 //trocando a pagina de light para dark e também operando com uma animação.
 const linkCss = document.querySelector('#css');
@@ -167,6 +167,13 @@ seletorHotdogs.addEventListener('click', ()=>{
 seletorPasteis.addEventListener('click', ()=>{
     if(seletorPasteis.checked){
         tablePasteis.style.display = 'flex';
+        menu.style.display = 'none';
+
+    }
+})
+seletorAçais.addEventListener('click', ()=>{
+    if(seletorAçais.checked){
+        tableAçais.style.display = 'flex';
         menu.style.display = 'none';
 
     }
