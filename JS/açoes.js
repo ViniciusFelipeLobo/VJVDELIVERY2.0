@@ -2,7 +2,7 @@
 lucide.createIcons();
 
 //DECLARAÇÃO DAS VARIAVEIS
-const menu = document.querySelector('#menu'), sobre = document.querySelector('#sobre'), lista = document.querySelector('ul'), larguraDaTela = window.innerWidth, section = document.querySelector('section'), botoes = document.getElementsByTagName('button'), seletorLanches = document.getElementById('seletorlanches'), seletorHotdogs = document.getElementById('seletorhotdogs'), tableLanches = document.getElementById('tablelanches'),tableHotDogs = document.getElementById('tablehotdogs'), table = document.querySelector('table');
+const menu = document.querySelector('#menu'), sobre = document.querySelector('#sobre'), lista = document.querySelector('ul'), larguraDaTela = window.innerWidth, section = document.querySelector('section'), botoes = document.getElementsByTagName('button'), seletorLanches = document.getElementById('seletorlanches'), seletorHotdogs = document.getElementById('seletorhotdogs'), tableLanches = document.getElementById('tablelanches'),tableHotDogs = document.getElementById('tablehotdogs'), table = document.querySelectorAll('table');
 
 //trocando a pagina de light para dark e também operando com uma animação.
 const linkCss = document.querySelector('#css');
@@ -41,34 +41,48 @@ botaoDarkLight.addEventListener('click', ()=>{
 })
 //Colocando a lista de maneira reponsiva para dispositivos Móveis.
 botoes[0].addEventListener('click', ()=>{
-    if(menu.style.display == 'none' && table.style.display == 'flex'){
-        table.style.display = 'none';
-        menu.style.display = 'none';
-        botoes[0].style.backgroundColor = '#8257e5';
-        botoes[0].style.color = '#ffffff'
+    let tabelaATiva = false;
+    for(let i = 0; i < table.length; i++){
+        if(table[i].style.display == 'flex'){
+            tabelaATiva = true;
+            break;
+        }
     }
-    // Quando o evento de clique for acionado mostrar o menu 
-    else if(menu.style.display == 'none'){
-        menu.style.display = 'block';
-        sobre.style.display = 'none';
-        // Enquanto o menu estiver acionado o botão vai ficar nesse coloração
-        if(linkCss.getAttribute('href') === 'CSS/style.css'){
-            botoes[0].style.backgroundColor = '#7f7f80';
-            botoes[1].style.backgroundColor = '#8257e5';
-            botoes[1].style.color = '#ffffff';
-        }else{
-            botoes[0].style.backgroundColor = '#ffffff';
-            botoes[0].style.color = '#8257e5';
-            botoes[1].style.backgroundColor = '#8257e5';
-            botoes[1].style.color = '#ffffff';
+    if(menu.style.display == 'none' && tabelaATiva){
+        for(let i = 0; i < table.length; i++){
+            if(menu.style.display == 'none' && table[i].style.display == 'flex'){
+                table[i].style.display = 'none';
+                menu.style.display = 'none';
+                botoes[0].style.backgroundColor = '#8257e5';
+                botoes[0].style.color = '#ffffff'
+            }
+        }    
+        
+    } 
+        // Quando o evento de clique for acionado mostrar o menu 
+        else if(menu.style.display == 'none'){
+            menu.style.display = 'block';
+            sobre.style.display = 'none';
+            // Enquanto o menu estiver acionado o botão vai ficar nesse coloração
+            if(linkCss.getAttribute('href') === 'CSS/style.css'){
+                botoes[0].style.backgroundColor = '#7f7f80';
+                botoes[1].style.backgroundColor = '#8257e5';
+                botoes[1].style.color = '#ffffff';
+            }else{
+                botoes[0].style.backgroundColor = '#ffffff';
+                botoes[0].style.color = '#8257e5';
+                botoes[1].style.backgroundColor = '#8257e5';
+                botoes[1].style.color = '#ffffff';
 
-        }
-        /* Aqui se a largura da tela estiver para dispositivos movéis vai fazer uma 
-        alteração de desing, tirando a lista de naveção do header e colocando ela na area 
-        do section*/
-        if(larguraDaTela <= 700){
-            section.appendChild(lista);
-        }
+            }
+            /* Aqui se a largura da tela estiver para dispositivos movéis vai fazer uma 
+            alteração de desing, tirando a lista de naveção do header e colocando ela na area 
+            do section*/
+            if(larguraDaTela <= 700){
+                section.appendChild(lista);
+            }
+        
+        
     }else{
         menu.style.display = 'none';
         //aqui toda vez que for fechada a lista o cardapio é fechado junto
