@@ -189,7 +189,12 @@ footer{
     transition: 1s ease-in-out;
     transform: rotate(360deg);
 }
-
+@media (max-height: 770px){
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+}
 @media (max-width:770px){
     html, body{
         height: 93vh;
