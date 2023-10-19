@@ -20,7 +20,7 @@
                 <div class="selector"> <input type="radio" name="inputRd" id="seletoraçais"> <i data-lucide="ice-cream-2" class="chevrons"></i><li>AÇAÍS</li><i data-lucide="check" class="chevrons1"></i></div>
                 <div class="selector"> <input type="radio" name="inputRd" id="seletorvitaminas"> <i data-lucide="cup-soda" class="chevrons"></i><li>VITAMINAS</li><i data-lucide="check" class="chevrons1"></i></div>
                 <div class="selector"> <input type="radio" name="inputRd"> <i data-lucide="beer" class="chevrons"></i><li>BEBIDAS EM GERAL</li><i data-lucide="check" class="chevrons1"></i></div>
-                <div class="selector"> <input type="radio" name="inputRd"> <i data-lucide="milk" class="chevrons"></i><li>REFRIGERANTES GRANDES</li><i data-lucide="check" class="chevrons1"></i></div>
+                <div class="selector"> <input type="radio" name="inputRd" id="seletorrefrigerantesgrandes"> <i data-lucide="milk" class="chevrons"></i><li>REFRIGERANTES GRANDES</li><i data-lucide="check" class="chevrons1"></i></div>
             </ul>
             <button id="btnMenu">Menu</button>
             <button id="btnSobre">Sobre</button>
@@ -217,191 +217,36 @@
               <td class="descricao">Descrição: Paçoca</td>
             </tr>
           </table>
-          <table id="tablelanches">
+          <table id="tablerefrigerantesgrandes">
             <tr>
-              <th class="nomeProduto">Lanches<ion-icon name="fast-food-outline" style="color: #8257e5; font-size: 24px; margin-left: .5rem;"></th>
+              <th class="nomeProduto">Refrigerantes Grandes<i data-lucide="milk" class="chevrons" style="stroke: #8257e5; margin-left: .5rem;"></i></th>
               <th class="valor">Valor</th>
             </tr>
             <tr>
               <td>
-                <span class="nomeProduto">X-tudo Triplo</span>
+                <span class="nomeProduto">Coca-cola 2 Litros</span>
               </td>
-              <td class="valor">R$ 19,00</td>
-              <td class="descricao">Descrição: Pão com gergelim, 3 Hambúrgueres de carne, Bacon, Ovo, Queijo, Alface, Tomate</td>
+              <td class="valor">R$ 13,00</td>
             </tr>
             <tr>
               <td>
-                <span class="nomeProduto">Artesanal Duplo</span>
-              </td>
-              <td class="valor">R$ 18,00</td>
-              <td class="descricao">Descrição: Pão brioche, 2 Hambúrgueres Atersanais, Bacon, Ovo, Queijo, Alface, Tomate</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Artesanal</span>
-              </td>
-              <td class="valor">R$ 15,00</td>
-              <td class="descricao">Descrição: Pão brioche, 1 Hambúrguer Artesanal, Bacon, Ovo Frito, Queijo, Alface, Tomate</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">X-tudo Duplo</span>
-              </td>
-              <td class="valor">R$ 15,00</td>
-              <td class="descricao">Descrição: Pão com gergelim, 2 Hambúrgueres de carne, Bacon, Ovo Frito, Queijo, Alface, Tomate</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">X-tudo</span>
-              </td>
-              <td class="valor">R$ 12,00</td>
-              <td class="descricao">Descrição: Pão com gergelim, 1 Hambúrguer de carne, Bacon, Ovo Frito, Queijo, Alface, Tomate</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">X-salada</span>
+                <span class="nomeProduto">Fanta Laranja ou Uva 2 Litros</span>
               </td>
               <td class="valor">R$ 10,00</td>
-              <td class="descricao">Descrição: Pão com gergelim, 1 Hambúrguer de carne, Queijo, Alface, Tomate</td>
             </tr>
             <tr>
               <td>
-                <span class="nomeProduto">Hambúrguer Simples</span>
+                <span class="nomeProduto">Guarana 2 Litros</span>
+              </td>
+              <td class="valor">R$ 10,00</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="nomeProduto">Dolly Guarana ou Limão 2 Litros</span>
               </td>
               <td class="valor">R$ 8,00</td>
-              <td class="descricao">Descrição: Pão com gergelim, 1 Hambúrguer de carne, Queijo, molhos</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Hambúrguer Vegano</span>
-              </td>
-              <td class="valor">R$ 8,00</td>
-              <td class="descricao">Descrição: Pão com gergelim, Ovo, Orégano, Queijo, molhos</td>
             </tr>
           </table>
-        <table id="tablehotdogs">
-            <tr>
-              <th class="nomeProduto">Hot Dog's<svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 512 512" style="fill: #8257e5; margin-left: .5rem;"><path d="M488.6 23.4c31.2 31.2 31.2 81.9 0 113.1l-352 352c-31.2 31.2-81.9 31.2-113.1 0s-31.2-81.9 0-113.1l352-352c31.2-31.2 81.9-31.2 113.1 0zM443.3 92.7c-6.2-6.2-16.4-6.2-22.6 0c-12.5 12.5-23.8 15.1-37.5 17.6l-2.5 .4c-13.8 2.5-31.6 5.6-48 22c-16.7 16.7-20.9 36-24.1 50.9l0 0v0l-.2 1c-3.4 15.6-6 26.4-15.7 36.1s-20.5 12.3-36.1 15.7l-1 .2c-14.9 3.2-34.2 7.4-50.9 24.1s-20.9 36-24.1 50.9l-.2 1c-3.4 15.6-6 26.4-15.7 36.1c-9.2 9.2-18 10.8-32.7 13.4l0 0-.9 .2c-15.6 2.8-34.9 6.9-54.4 26.4c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0c12.5-12.5 23.8-15.1 37.5-17.6l2.5-.4c13.8-2.5 31.6-5.6 48-22c16.7-16.7 20.9-36 24.1-50.9l.2-1c3.4-15.6 6-26.4 15.7-36.1s20.5-12.3 36.1-15.7l1-.2c14.9-3.2 34.2-7.4 50.9-24.1s20.9-36 24.1-50.9l.2-1c3.4-15.6 6-26.4 15.7-36.1c9.2-9.2 18-10.8 32.7-13.4l.9-.2c15.6-2.8 34.9-6.9 54.4-26.4c6.2-6.2 6.2-16.4 0-22.6zM191.2 479.2l288-288L495 207c10.9 10.9 17 25.6 17 41s-6.1 30.1-17 41L289 495c-10.9 10.9-25.6 17-41 17s-30.1-6.1-41-17l-15.8-15.8zM17 305C6.1 294.1 0 279.4 0 264s6.1-30.1 17-41L223 17C233.9 6.1 248.6 0 264 0s30.1 6.1 41 17l15.8 15.8-288 288L17 305z"/></svg></th>
-              <th class="valor">Valor</th>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Hot-Dog Duplo</span>
-              </td>
-              <td class="valor">R$ 10,00</td>
-              <td class="descricao">Descrição: Pão, 2 Salsichas, Purê de Batata, Batata Palha, Ketchup, Mostarda, Maionese </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Hot-Dog Completo</span>
-              </td>
-              <td class="valor">R$ 7,00</td>
-              <td class="descricao">Descrição: Pão, Salsicha, Purê de Batata, Batata Palha, Ketchup, Mostarda, Maionese </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Hot-Dog Simples</span>
-              </td>
-              <td class="valor">R$ 5,00</td>
-              <td class="descricao">Descrição: Pão, Salsicha, Ketchup, Mostarda, Maionese </td>
-            </tr>
-          </table>
-          <table id="tablepasteis">
-            <tr>
-              <th class="nomeProduto">Pastéis<i data-lucide="croissant" class="chevrons" style="margin-left: .5rem; stroke: #8257e5;"></i></th>
-              <th class="valor">Valor</th>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Carne com queijo</span>
-              </td>
-              <td class="valor">R$ 9,00</td>
-              <td class="descricao">Descrição: Carne e queijo</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Frango com queijo</span>
-              </td>
-              <td class="valor">R$ 9,00</td>
-              <td class="descricao">Descrição: Frango e queijo</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Carne</span>
-              </td>
-              <td class="valor">R$ 7,00</td>
-              <td class="descricao">Descrição: Carne</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Frango</span>
-              </td>
-              <td class="valor">R$ 7,00</td>
-              <td class="descricao">Descrição: Frango</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Bauru</span>
-              </td>
-              <td class="valor">R$ 7,00</td>
-              <td class="descricao">Descrição: Presunto, Queijo, Orégano</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Pizza</span>
-              </td>
-              <td class="valor">R$ 7,00</td>
-              <td class="descricao">Descrição: Queijo, Tomate, Azeitona, Orégano</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Queijo</span>
-              </td>
-              <td class="valor">R$ 7,00</td>
-              <td class="descricao">Descrição: Queijo, Orégano</td>
-            </tr>
-          </table>
-          <table id="tableaçais">
-            <tr>
-              <th class="nomeProduto">Açaís<i data-lucide="ice-cream-2" class="chevrons" style="stroke: #8257e5; margin-left: .5rem;"></i></th>
-              <th class="valor">Valor</th>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Açaí Grande 500Ml</span>
-              </td>
-              <td class="valor">R$ 18,00</td>
-              <td class="descricao">Descrição: Açaí, Morango, Banana, Chocoball, Granola, Leite em pó, Leite condensado</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Açaí Medio 250Ml</span>
-              </td>
-              <td class="valor">R$ 10,00</td>
-              <td class="descricao">Descrição: Açaí, Morango ou Banana, Chocoball, Granola, Leite condensado</td>
-            </tr>
-          </table>
-          <table id="tablevitaminas">
-            <tr>
-              <th class="nomeProduto">Açaís<i data-lucide="ice-cream-2" class="chevrons" style="stroke: #8257e5; margin-left: .5rem;"></i></th>
-              <th class="valor">Valor</th>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Vitamina de Açaí 500Ml</span>
-              </td>
-              <td class="valor">R$ 10,00</td>
-              <td class="descricao">Descrição: Açaí, Granola, Leite em pó, Leite condensado</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="nomeProduto">Adicional Paçoca</span>
-              </td>
-              <td class="valor">R$ 0,50</td>
-              <td class="descricao">Descrição: Paçoca</td>
-            </tr>
-          </table>
-
     </section>
     <footer><p id="reconhecimento">Desenvolvido por <a href="">@Vinicius Felipe</a></p></footer>
     <script src="https://unpkg.com/lucide@latest"></script>
