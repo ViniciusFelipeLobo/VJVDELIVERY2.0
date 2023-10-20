@@ -185,6 +185,22 @@ seletorVitaminas.addEventListener('click', ()=>{
 
     }
 })
+seletorBebidas.addEventListener('click', ()=>{
+    if(seletorBebidas.checked){
+        tableBebidas.style.display = 'flex';
+        menu.style.display = 'none';
+
+    }
+})
+seletorRefrigerantesGrandes.addEventListener('click', ()=>{
+    if(seletorRefrigerantesGrandes.checked){
+        tableRefrigerantesGrandes.style.display = 'flex';
+        menu.style.display = 'none';
+
+    }
+})
+
+
 
 
 
