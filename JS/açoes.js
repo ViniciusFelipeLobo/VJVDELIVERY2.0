@@ -125,7 +125,7 @@ botoes[1].addEventListener('click', ()=>{
         sobre.style.display = 'block';
         menu.style.display = 'none';
         if(tabelaAtiva){
-        for(let i = 0; i<table.length; i++){
+        for(let i = 0; i < table.length; i++){
         table[i].style.display = 'none';
         break;
         }
@@ -150,7 +150,13 @@ botoes[1].addEventListener('click', ()=>{
             section.appendChild(lista);
         }
     }else{
+        if(tabelaAtiva){
+            for(let i = 0; i < table.length; i++){
+            table[i].style.display = 'none';
+            break;
+            }}
         sobre.style.display = 'none';
+
         // Quando o sobre não estiver acionado vai voltar para a coloração padrão
         if(linkCss.getAttribute('href') === 'CSS/style.css'){
             botoes[1].style.backgroundColor = '#8257e5';
