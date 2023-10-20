@@ -112,11 +112,25 @@ botoes[0].addEventListener('click', ()=>{
 
 })
 botoes[1].addEventListener('click', ()=>{
+
+    let tabelaAtiva = false;
+    for(let i = 0; i < table.length; i++){
+        if(table[i].style.display == 'flex'){
+        tabelaAtiva = true;
+        break;
+        }
+    }
     // Quando o evento de clique for acionado mostrar o menu 
     if(sobre.style.display == 'none'){
         sobre.style.display = 'block';
         menu.style.display = 'none';
-        table.style.display = 'none';
+        if(tabelaAtiva){
+        for(let i = 0; i<table.length; i++){
+        table[i].style.display = 'none';
+        break;
+        }
+        
+        }
         /* Enquanto o sobre estiver acionado o botão vai ficar nesse coloração
         tambem evitando do outro botão ficar acionado*/
        if(linkCss.getAttribute('href') === 'CSS/style.css'){
