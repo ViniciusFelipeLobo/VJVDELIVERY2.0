@@ -153,8 +153,8 @@ botoes[1].addEventListener('click', ()=>{
         if(tabelaAtiva){
             for(let i = 0; i < table.length; i++){
             table[i].style.display = 'none';
-            break;
-            }}
+            
+            }}  
         sobre.style.display = 'none';
 
         // Quando o sobre não estiver acionado vai voltar para a coloração padrão
@@ -166,7 +166,6 @@ botoes[1].addEventListener('click', ()=>{
             botoes[1].style.color = '#ffffff'
         }
     }
-
 })
 // Seleção dos Botões do cardápio para abrir as opções desejadas, esse código abaixo é usado também na linha 62,63
 seletorLanches.addEventListener('click', ()=>{
