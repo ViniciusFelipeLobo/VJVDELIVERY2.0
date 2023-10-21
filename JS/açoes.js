@@ -153,7 +153,6 @@ botoes[1].addEventListener('click', ()=>{
         if(tabelaAtiva){
             for(let i = 0; i < table.length; i++){
             table[i].style.display = 'none';
-            
             }}  
         sobre.style.display = 'none';
 
