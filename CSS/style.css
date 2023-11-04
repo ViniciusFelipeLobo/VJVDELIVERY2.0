@@ -171,10 +171,10 @@ table {
     height: 100%;
     width: 100%;
     background-color: var(--cor-branca);
-  }
-  #divcontatos p{
-    color: var(--cor-amarela);
-  }
+}
+#divcontatos p{
+    color: var(--cor-destaque);
+}
 footer{
     background-color: var(--cor-branca);
     height: 8%;
