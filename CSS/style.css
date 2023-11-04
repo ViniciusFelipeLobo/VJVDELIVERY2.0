@@ -172,6 +172,9 @@ table {
     width: 100%;
     background-color: var(--cor-branca);
   }
+  #divcontatos p{
+    color: var(--cor-amarela);
+  }
 footer{
     background-color: var(--cor-branca);
     height: 8%;
