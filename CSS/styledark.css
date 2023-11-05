@@ -169,6 +169,18 @@ table {
     font-size: .7rem;
     padding: 0 0 .5rem 1rem;
     }
+    #divcontatos{
+        height: 100%;
+        width: 100%;
+        background-color: var(--cor-de-fundo);
+    }
+    #divcontatos p{
+        color: var(--cor-destaque);
+    }
+    #divcontatos a {
+        text-decoration: none;
+        color: var(--cor-branca);
+    }
     footer{
         background-color: var(--cor-de-fundo);
         height: 8%;
