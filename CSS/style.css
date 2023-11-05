@@ -175,6 +175,10 @@ table {
 #divcontatos p{
     color: var(--cor-destaque);
 }
+#divcontatos a {
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+}
 footer{
     background-color: var(--cor-branca);
     height: 8%;
