@@ -170,16 +170,30 @@ table {
     padding: 0 0 .5rem 1rem;
     }
     #divcontatos{
+        display: none;
+        flex-direction: column;
+        align-items: start;
         height: 100%;
         width: 100%;
         background-color: var(--cor-de-fundo);
+    }
+    #cabecalhoContatos{
+        display: flex;
     }
     #divcontatos p{
         color: var(--cor-destaque);
     }
     #divcontatos a {
+        display: grid;
+        grid-template: repeat(1fr) / 1fr 1fr;
         text-decoration: none;
         color: var(--cor-branca);
+    }
+    #divcontatos ion-icon{
+        color: var(--cor-branca);
+    }
+    .nomesContatos{
+        margin: .5rem 0;
     }
     footer{
         background-color: var(--cor-de-fundo);
