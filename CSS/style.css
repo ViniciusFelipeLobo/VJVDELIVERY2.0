@@ -167,13 +167,20 @@ table {
     font-size: .7rem;
     padding: 0 0 .5rem 1rem;
   }
-#divcontatos{
+  #cabecalhoContatos{
+    display: flex;
+    flex-direction: row;
+  }
+  #divcontatos{
     display: none;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     background-color: var(--cor-branca);
 }
 #divcontatos p{
+    display: flex;
+    flex-direction: column;
     color: var(--cor-destaque);
 }
 #divcontatos a {
